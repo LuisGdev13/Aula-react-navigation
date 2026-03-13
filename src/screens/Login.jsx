@@ -1,9 +1,10 @@
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Button } from "react-native";
 
-export default function Login(){
+export default function Login({navigation}){
     return(
         <View style={styles.container}>
             <Text>Tela de Login </Text>
+            
         </View>
     )
 }

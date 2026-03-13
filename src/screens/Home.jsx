@@ -1,9 +1,11 @@
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Button } from "react-native";
 
-export default function Home(){
+export default function Home({navigation}){
     return(
         <View style={styles.container}>
             <Text>Tela Principal </Text>
+            <Button title="Fazer login" onPress={()=>navigation.navigate("login")} />
+            <Button title="Ir para serviços" onPress={()=>navigation.navigate("services")} />
         </View>
     )
 }
